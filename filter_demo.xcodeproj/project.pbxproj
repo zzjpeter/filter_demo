@@ -15,6 +15,10 @@
 		DE80D0381E120C130030F693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE80D0361E120C130030F693 /* LaunchScreen.storyboard */; };
 		DE80D0431E120C140030F693 /* filter_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80D0421E120C140030F693 /* filter_demoTests.m */; };
 		DE80D04E1E120C140030F693 /* filter_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80D04D1E120C140030F693 /* filter_demoUITests.m */; };
+		DE80D06A1E120F2F0030F693 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE80D0691E120F2F0030F693 /* AVFoundation.framework */; };
+		DE80D0781E12105D0030F693 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE80D0731E12104D0030F693 /* libGPUImage.a */; };
+		DE80D08E1E124BBB0030F693 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE80D08D1E124BBB0030F693 /* 1.jpg */; };
+		DE80D0901E125CD00030F693 /* IMG_5137.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE80D08F1E125CD00030F693 /* IMG_5137.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = DE80D0241E120C130030F693;
 			remoteInfo = filter_demo;
+		};
+		DE80D0721E12104D0030F693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE80D06C1E12104D0030F693 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		DE80D0741E12104D0030F693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE80D06C1E12104D0030F693 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		DE80D0761E12105A0030F693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE80D06C1E12104D0030F693 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +76,10 @@
 		DE80D0491E120C140030F693 /* filter_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = filter_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE80D04D1E120C140030F693 /* filter_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filter_demoUITests.m; sourceTree = "<group>"; };
 		DE80D04F1E120C140030F693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE80D0691E120F2F0030F693 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DE80D06C1E12104D0030F693 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		DE80D08D1E124BBB0030F693 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		DE80D08F1E125CD00030F693 /* IMG_5137.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5137.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE80D0781E12105D0030F693 /* libGPUImage.a in Frameworks */,
+				DE80D06A1E120F2F0030F693 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +112,7 @@
 		DE80D01C1E120C130030F693 = {
 			isa = PBXGroup;
 			children = (
+				DE80D0691E120F2F0030F693 /* AVFoundation.framework */,
 				DE80D0271E120C130030F693 /* filter_demo */,
 				DE80D0411E120C140030F693 /* filter_demoTests */,
 				DE80D04C1E120C140030F693 /* filter_demoUITests */,
@@ -101,10 +133,13 @@
 		DE80D0271E120C130030F693 /* filter_demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE80D06C1E12104D0030F693 /* GPUImage.xcodeproj */,
 				DE80D02B1E120C130030F693 /* AppDelegate.h */,
 				DE80D02C1E120C130030F693 /* AppDelegate.m */,
 				DE80D02E1E120C130030F693 /* ViewController.h */,
 				DE80D02F1E120C130030F693 /* ViewController.m */,
+				DE80D08D1E124BBB0030F693 /* 1.jpg */,
+				DE80D08F1E125CD00030F693 /* IMG_5137.jpg */,
 				DE80D0311E120C130030F693 /* Main.storyboard */,
 				DE80D0341E120C130030F693 /* Assets.xcassets */,
 				DE80D0361E120C130030F693 /* LaunchScreen.storyboard */,
@@ -140,6 +175,15 @@
 			path = filter_demoUITests;
 			sourceTree = "<group>";
 		};
+		DE80D06D1E12104D0030F693 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE80D0731E12104D0030F693 /* libGPUImage.a */,
+				DE80D0751E12104D0030F693 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +198,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DE80D0771E12105A0030F693 /* PBXTargetDependency */,
 			);
 			name = filter_demo;
 			productName = filter_demo;
@@ -207,6 +252,7 @@
 				TargetAttributes = {
 					DE80D0241E120C130030F693 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = A52255Y4E5;
 					};
 					DE80D03D1E120C140030F693 = {
 						CreatedOnToolsVersion = 7.3;
@@ -229,6 +275,12 @@
 			mainGroup = DE80D01C1E120C130030F693;
 			productRefGroup = DE80D0261E120C130030F693 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DE80D06D1E12104D0030F693 /* Products */;
+					ProjectRef = DE80D06C1E12104D0030F693 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DE80D0241E120C130030F693 /* filter_demo */,
@@ -238,12 +290,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		DE80D0731E12104D0030F693 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = DE80D0721E12104D0030F693 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE80D0751E12104D0030F693 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = DE80D0741E12104D0030F693 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		DE80D0231E120C130030F693 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE80D0901E125CD00030F693 /* IMG_5137.jpg in Resources */,
 				DE80D0381E120C130030F693 /* LaunchScreen.storyboard in Resources */,
+				DE80D08E1E124BBB0030F693 /* 1.jpg in Resources */,
 				DE80D0351E120C130030F693 /* Assets.xcassets in Resources */,
 				DE80D0331E120C130030F693 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +375,11 @@
 			isa = PBXTargetDependency;
 			target = DE80D0241E120C130030F693 /* filter_demo */;
 			targetProxy = DE80D04A1E120C140030F693 /* PBXContainerItemProxy */;
+		};
+		DE80D0771E12105A0030F693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = DE80D0761E12105A0030F693 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,10 +491,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/GPUImage/Source/iOS",
+					"$(SRCROOT)/GPUImage/Source",
+					"\"$(SRCROOT)/GPUImage/GPUMirror.h\"",
+					"\"$(SRCROOT)/GPUImage/GPUMirror.m\"",
+				);
 				INFOPLIST_FILE = filter_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiye.filter-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +512,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/GPUImage/Source/iOS",
+					"$(SRCROOT)/GPUImage/Source",
+					"\"$(SRCROOT)/GPUImage/GPUMirror.h\"",
+					"\"$(SRCROOT)/GPUImage/GPUMirror.m\"",
+				);
 				INFOPLIST_FILE = filter_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiye.filter-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +594,7 @@
 				DE80D0541E120C140030F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE80D0551E120C140030F693 /* Build configuration list for PBXNativeTarget "filter_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +603,7 @@
 				DE80D0571E120C140030F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE80D0581E120C140030F693 /* Build configuration list for PBXNativeTarget "filter_demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +612,7 @@
 				DE80D05A1E120C140030F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
