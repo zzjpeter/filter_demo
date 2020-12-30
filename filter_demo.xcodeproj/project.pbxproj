@@ -252,7 +252,8 @@
 				TargetAttributes = {
 					DE80D0241E120C130030F693 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = A52255Y4E5;
+						DevelopmentTeam = 9Z78449GFH;
+						ProvisioningStyle = Manual;
 					};
 					DE80D03D1E120C140030F693 = {
 						CreatedOnToolsVersion = 7.3;
@@ -269,6 +270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +496,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9Z78449GFH;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/GPUImage/Source/iOS",
 					"$(SRCROOT)/GPUImage/Source",
@@ -502,9 +506,10 @@
 				);
 				INFOPLIST_FILE = filter_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shiye.filter-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cgh.filter-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c9d0bb20-9c42-4524-bbd3-dd1daeefabe3";
+				PROVISIONING_PROFILE_SPECIFIER = cgh.development;
 			};
 			name = Debug;
 		};
@@ -515,6 +520,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/GPUImage/Source/iOS",
 					"$(SRCROOT)/GPUImage/Source",
@@ -523,9 +530,10 @@
 				);
 				INFOPLIST_FILE = filter_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shiye.filter-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cheng.filter-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -250,12 +250,12 @@
             break;
         case 6:
             filter = [[GPUOther alloc] init];
-            index = 7;
-            break;
-        case 7:
-            filter = [[GPUFour alloc] init];
             index = 0;
             break;
+//        case 7:
+//            filter = [[GPUFour alloc] init];
+//            index = 0;
+//            break;
         default:
             break;
     }
